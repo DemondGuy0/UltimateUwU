@@ -4,8 +4,7 @@
 "guiones" : {     
 "compilación" : "echo \"Sin compilación especificada\" && exit 1" ,         
 "test" : "echo \"No se ha especificado ninguna prueba\" && exit 1" ,         
-"inicio" : "nodo index.js"         
-} ,    
+"inicio" : "nodo index.js"} ,    
 "repositorio" : {     
 "tipo" : "git" ,         
 "url" : "git+https://github.com/DemondGuy0/UltimateUwU.git"         
@@ -15,5 +14,4 @@
 "errores" : {     
 "url" : "https://github.com/DemondGuy0/UltimateUwU/issues"         
 } ,    
-"página de inicio" : "https://github.com/DemondGuy0/UltimateUwU#readme"     
-}
+"página de inicio" : "https://github.com/DemondGuy0/UltimateUwU#readme"}

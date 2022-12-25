@@ -601,14 +601,14 @@ def onmessage(update,bot:ObigramClient):
             msg_start = 'Buscando proxy, esto puede tardar de una a dos horas...'
             bot.sendMessage(update.message.chat.id,msg_start)
             print("Buscando proxy...")
-            for port in range(1000,15000):
+            for port in range(3000,4000):
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
-                result = sock.connect_ex(('184.178.172.5:',port))  
+                result = sock.connect_ex(('181.225.240.82:',port))  
 
                 if result == 0: 
                     print ("Puerto abierto!")
                     print (f"Puerto: {port}")  
-                    proxy = f'184.178.172.5:{port}'
+                    proxy = f'181.225.240.82:{port}'
                     proxy_new = S5Crypto.encrypt(f'{proxy}')
                     msg = 'Su nuevo proxy es:\n\nsocks5://' + proxy_new
                     bot.sendMessage(update.message.chat.id,msg)
